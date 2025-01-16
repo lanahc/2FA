@@ -15,6 +15,24 @@ if(isset($POST['password_reset_link']))
       $row = mysqli_fetch_array($check_email_run);
       $get_name = $row['name'];
       $get_email = $row['email'];
+
+
+      $update_token = "UPDATE users SET verify_token= '$token' WHERE email = '$get_email' LIMIT 1";
+      $update_token_run = mysqli_query($con, $update_token);
+
+      if ($update_token_run)
+      {
+        send_password_reset($get_name,$get_email,$token);
+        $_SESSION['status'] = "We emailed you a password reset link";
+        header("Location:passreset.php");
+        exit(0);
+      }
+      else
+      {
+        $_SESSION['status'] = "Something went wrong. #1";
+        header("Location:passreset.php");
+        exit(0);
+      }
     }
     else
     {
