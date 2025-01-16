@@ -1,7 +1,7 @@
 <?php
 // Start the session to access user data
 session_start();
-
+require 'vendor/autoload.php';
 // Check if the user is logged in by verifying session variables
 if (isset($_SESSION['user_id'])) {
     // User is logged in, retrieve their name
