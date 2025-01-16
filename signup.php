@@ -22,7 +22,7 @@ include 'process.php';
               <div class="card" style="border-radius: 15px;">
                 <div class="card-body p-5">
                   <h2 class="text-uppercase text-center mb-5">Sign Up</h2>
-                  <form action="process.php" method="POST">
+                  <form action="process-s.php" method="POST">
                     <div data-mdb-input-init class="form-outline mb-4">
                       <input type="text" id="form3Example1cg" name="name" class="form-control form-control-lg" required />
                       <label class="form-label" for="form3Example1cg">Your Name</label>
