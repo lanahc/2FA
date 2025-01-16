@@ -32,7 +32,7 @@
                   <label class="form-label" for="typePasswordX">Password</label>
                 </div>
 
-                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="password-reset.php">Forgot password?</a></p>
+                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="passreset.php">Forgot password?</a></p>
 
                 <button data-mdb-button-init data-mdb-ripple-init class="btn btn-lg gradient-custom-4 text-body px-5" type="submit">Login</button>
 
