@@ -39,7 +39,7 @@ $page_title = "Pass Reset Form";
                   }
                 ?>
 
-                <form action="pass_reset.php" method="POST">
+                <form action="pass-reset-code.php" method="POST">
                   <div data-mdb-input-init class="form-outline form-white mb-4">
                     <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" required />
                     <label class="form-label" for="typeEmailX">Email</label>
