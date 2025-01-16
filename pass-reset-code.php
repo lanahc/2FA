@@ -37,8 +37,11 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Subject = 'Reset Password Notification';
+    $mail->Body    = '<h2>Hello!</h2>
+    <h3>You are receiving this email because we received a password request for your account.</h3
+    <br><br/>
+    ';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
