@@ -9,6 +9,10 @@
   <!-- MDB UI Kit -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css">
 </head>
+<?php
+include 'dbconn.php';
+?>
+
 <body>
   <section class="vh-100 gradient-custom-3">
     <div class="container py-5 h-100">
