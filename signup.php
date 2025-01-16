@@ -59,4 +59,5 @@
 </html>
 <?php
 include 'dbconn.php';
+require 'vendor/autoload.php';
 ?>
