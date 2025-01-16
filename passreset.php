@@ -45,7 +45,7 @@ $page_title = "Pass Reset Form";
                     <label class="form-label" for="typeEmailX">Email</label>
                   </div>
 
-                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-lg gradient-custom-4 text-body px-5" type="submit">Send Reset Link</button>
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-lg gradient-custom-4 text-body px-5"  name = "password_reset_link" type="submit">Send Reset Link</button>
                 </form>
 
               </div>
