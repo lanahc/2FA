@@ -14,6 +14,7 @@ include 'dbconn.php';
 ?>
 
 <body>
+<form method="POST" action="process.php">
   <section class="vh-100 gradient-custom-3">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
