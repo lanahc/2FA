@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css">
 </head>
-<?php
-include 'dbconn.php';
-?>
 
 <body>
     <section class="vh-100 bg-image"
@@ -60,3 +57,6 @@ include 'dbconn.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
 </body>
 </html>
+<?php
+include 'dbconn.php';
+?>
