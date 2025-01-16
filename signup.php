@@ -13,7 +13,6 @@ include 'process.php';
 ?>
 
 <body>
-<form method="POST" action="process.php">
     <section class="vh-100 bg-image"
       style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
       <div class="mask d-flex align-items-center h-100 gradient-custom-3">
@@ -23,7 +22,7 @@ include 'process.php';
               <div class="card" style="border-radius: 15px;">
                 <div class="card-body p-5">
                   <h2 class="text-uppercase text-center mb-5">Sign Up</h2>
-                  <form action="process_form.php" method="POST">
+                  <form action="process.php" method="POST">
                     <div data-mdb-input-init class="form-outline mb-4">
                       <input type="text" id="form3Example1cg" name="name" class="form-control form-control-lg" required />
                       <label class="form-label" for="form3Example1cg">Your Name</label>
