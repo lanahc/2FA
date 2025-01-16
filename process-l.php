@@ -1,7 +1,7 @@
 <?php
 // Include database connection file
 include 'dbconn.php';
-
+require 'vendor/autoload.php';
 // Start the session
 session_start();
 
