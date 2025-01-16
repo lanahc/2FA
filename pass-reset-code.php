@@ -1,7 +1,13 @@
 <?php
 include('dbconn.php');
-require 'vendor/autoload.php';
 
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
 function send_password_reset($get_name,$get_email,$token)
 {
     
