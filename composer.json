@@ -8,6 +8,5 @@
             "name": "Filanah"
         }
     ],
-    "require": {"phpmailer/phpmailer": "^6.8"}
+    "require": {"phpmailer/phpmailer": "^6.9"}
 }
-
