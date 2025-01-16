@@ -2,6 +2,9 @@
 // Include database connection file
 include 'dbconn.php';
 
+// Start the session
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get user input from the form
     $email = htmlspecialchars($_POST['email']);
@@ -24,13 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             // Verify the password using password_verify() for hashed password
             if (password_verify($password, $user['password'])) {
-                // Start a session and store user information
-                session_start();
+                // Store user information in session
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['user_name'] = $user['name'];
                 $_SESSION['user_email'] = $user['email'];
 
-                // Redirect to the dashboard or home page after successful login
+                // Redirect to the dashboard after successful login
                 header("Location: dashboard.php");
                 exit();
             } else {
