@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require 'vendor/autoload.php';
 $page_title = "Pass Reset Form";
 ?>
 
