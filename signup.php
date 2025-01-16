@@ -9,7 +9,6 @@
 </head>
 <?php
 include 'dbconn.php';
-include 'process.php';
 ?>
 
 <body>
