@@ -1,0 +1,13 @@
+{
+    "name": "myvendor/myproject",
+    "description": "none",
+    "type": "project",
+    "license": "none",
+    "authors": [
+        {
+            "name": "Filanah"
+        }
+    ],
+    "require": {"phpmailer/phpmailer": "^6.8"}
+}
+
