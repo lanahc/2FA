@@ -1,6 +1,6 @@
 <?php
 include('dbconn.php');
-
+require 'vendor/autoload.php';
 
 function send_password_reset($get_name,$get_email,$token)
 {
