@@ -24,7 +24,7 @@
                 <p class="text-white-50 mb-5">Please enter your email and password!</p>
 
                 <!-- Update form to point to process-login.php and use POST method -->
-                <form action="process-login.php" method="POST">
+                <form action="process-l.php" method="POST">
                   <div data-mdb-input-init class="form-outline form-white mb-4">
                     <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" required />
                     <label class="form-label" for="typeEmailX">Email</label>
