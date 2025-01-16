@@ -13,6 +13,7 @@ include 'process.php';
 ?>
 
 <body>
+<form method="POST" action="process.php">
     <section class="vh-100 bg-image"
       style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
       <div class="mask d-flex align-items-center h-100 gradient-custom-3">
