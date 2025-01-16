@@ -48,7 +48,9 @@
                 <p class="mb-0">Don't have an account? <a href="signup.php" class="text-white-50 fw-bold">Sign Up</a>
                 </p>
               </div>
-              <p class="text-white-50 mb-5">Did not receive your Verification Email?</p>
+              <p class="text-white-50 mb-5">Did not receive your Verification Email? 
+                <a href = "resend-email-verification.php">Resend
+              </p>
             </div>
           </div>
         </div>
