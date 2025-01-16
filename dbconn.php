@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 // Database connection details
 $host = "localhost"; // Database host
 $user = "root";      // Database username
