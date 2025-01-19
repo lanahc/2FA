@@ -38,10 +38,11 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Reset Password Notification';
-    $mail->Body    = '<h2>Hello!</h2>
+    $mail->Body    = "<h2>Hello!</h2>
     <h3>You are receiving this email because we received a password request for your account.</h3
     <br><br/>
-    ';
+    <a href = 'http://localhost/TWO%20FA/passchange.php?token=$token&email=$email'> Click Me </a>
+    ";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
