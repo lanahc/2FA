@@ -21,7 +21,7 @@ try {
     $mail->Username   = 'user@example.com';                     //SMTP username
     $mail->Password   = '***';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('from@example.com', $get_name);
@@ -44,7 +44,7 @@ try {
     <a href = 'http://localhost/TWO%20FA/passchange.php?token-$token&email-$email'> Click Me </a>
     ";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
+ 
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
