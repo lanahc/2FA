@@ -1,5 +1,8 @@
 <?php
 include('dbconn.php');
+if (!$con) {
+  die("Database connection failed: " . mysqli_connect_error());
+}
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -55,10 +58,10 @@ try {
 
 if(isset($_POST['password_reset_link']))
 {
-    $email =mysqli_real_escape_string($con, $_POST['email']);
+    $email = mysqli_real_escape_string($con, $_POST['email']);
     $token = md5(rand());
 
-    $check_email = "SELECT email * FROM users WHERE email = '$email' LIMIT 1 ";
+    $check_email = "SELECT * FROM users WHERE email = '$email' LIMIT 1";
     $check_email_run = mysqli_query($con,$check_email);
 
     if(mysqli_num_rows($check_email_run) >0)
